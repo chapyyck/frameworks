@@ -122,7 +122,7 @@ Route::prefix('tasks')->group(function () {
 ```
 Проверим созданные маршруты с помощью команды `php artisan route:list`:
 ```
-GET|HEAD   tasks..............tasks.index › TaskController@index 
+GET|HEAD   tasks.............. tasks.index › TaskController@index 
 POST       tasks.............. tasks.store › TaskController@store  
 GET|HEAD   tasks/create....... tasks.create › TaskController@create  
 GET|HEAD   tasks/{id}......... tasks.show › TaskController@show  
