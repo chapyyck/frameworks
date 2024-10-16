@@ -18,7 +18,7 @@
 
 #### №3.1. Создание маршрутов для главной страницы и страницы "О нас"
 **Home Controller**:
-```injectablephp
+```php
 public function index()
 {
      return view('home');  // home.blade.php
@@ -30,7 +30,7 @@ public function about()
 }
 ```
 **Маршруты**:
-```injectablephp
+```php
 // для главной страницы
 Route::get('/', [HomeController::class, 'index'])->name('start');
 
@@ -40,7 +40,7 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 
 #### №3.2. Создание маршрутов для задач
 **Task Controller**:
-```injectablephp
+```php
 public function index()
 {
     return view('index');
@@ -85,7 +85,7 @@ public function destroy($id)
 | PUT    | Обновить существующие данные |
 | DELETE | Удалить данные               |
 
-```injectablephp
+```php
 Route::prefix('tasks')->group(function () {
     // Отображение списка задач
     Route::get('/', [TaskController::class, 'index'])
