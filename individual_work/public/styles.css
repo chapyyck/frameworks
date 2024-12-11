@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Montserrat, sans-serif;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+a {
+    color: #7c9ab7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.site-header {
+    background-color: #f4f4f4;
+    color: #555555;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 50px auto;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background: #e3e3e3;
+    border: unset;
+    cursor: pointer;
+}
+
+p {
+    padding: 2px;
+}
+
+.msg {
+    border: 2px solid #ffa908;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logout {
+    color: #b7625c;
+}
+
+.home-container {
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.home-header p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.admin-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.assignments-container {
+    margin-top: 20px;
+}
+
+.assignments-title {
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.assignment-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.logout-form {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #70a8e4;
+    color: #fff;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.btn-danger {
+    background-color: #ff4e64;
+    color: #fff;
+    width: 128px;
+}
+
+.btn-logout {
+    background-color: #e3e3e3;
+    color: #333;
+    margin-top: 50px;
+}
+
+
+.admin-container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.user-list-container {
+    margin-top: 20px;
+}
+
+.user-list-container h2 {
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+    width: 400px;
+}
+
+.btn-logout {
+    background-color: #e3e3e3;
+    color: #333;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.btn-back {
+    background-color: #6c757d;
+    color: #fff;
+    height: 40px;
+}
+
+.back-form {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.create-assignment-container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-assignment-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-assignment-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.create-assignment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-group .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-group .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #51a8ff;
+    color: #fff;
+    width: 400px;
+}
+
+.btn-back {
+    background-color: #6c757d;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.for-0-px {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.edit-assignment-container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-assignment-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.edit-assignment-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.assignment-details {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #444;
+}
+
+.assignment-details p {
+    margin: 5px 0;
+}
+
+.edit-assignment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-group .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-group .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4099ff;
+    color: #fff;
+}
+
+.btn-back {
+    background-color: #6c757d;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.left {
+    text-align: left;
+}
+
+.sort-form {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.sort-form label {
+    font-size: 16px;
+    color: #444;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.sort-form select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.sort-form select:focus {
+    border-color: #007bff;
+}
+
+.sort-form select option {
+    padding: 8px;
+}
+
