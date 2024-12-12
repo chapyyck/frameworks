@@ -10,14 +10,12 @@ class AssignmentController extends Controller
 {
     public function index()
     {
-        // Только ученики могут видеть задания
         $assignments = Assignment::all();
         return view('index', compact('assignments'));
     }
 
     public function create()
     {
-        // Только преподаватели могут добавлять задания
         if (auth()->user()->role != 'admin') {
             abort(403);
         }
@@ -29,7 +27,7 @@ class AssignmentController extends Controller
     {
         // Валидация данных
         $request->validate([
-            'description' => 'required|string',
+            'description' => 'required|string|max:100',
             'difficulty' => 'required|in:easy,medium,hard',
             'subject_id' => 'required|exists:subjects,id',
         ]);
